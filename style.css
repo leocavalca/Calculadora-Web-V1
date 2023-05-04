@@ -77,12 +77,6 @@ header{
 
 }
 
-._0{
-    margin: 0.3em;
-    width: 13em;
-    height: 5em;
-}
-
 ._ig{
     height: 11em;
 }
@@ -102,8 +96,12 @@ header{
 ._0{
     grid-area: _0;
 }
-._del{
-    grid-area: _del;
+._pd{
+    grid-area: _pd;
+}
+
+._pe{
+    grid-area: _pe;
 }
 
 .linha_4e5{
@@ -112,7 +110,7 @@ header{
     grid-template-rows: auto;
     grid-template-areas: 
     "_1 _2 _3 _ig"
-    "_0 _0 _del _ig"
+    "_0 _pe _pd _ig"
     ;
 }
 
