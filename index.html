@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="shortcut icon" href="img/Calculator-icon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <!--Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/e252e9b519.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
         <p>CALCULADORA ONLINE</p>
     </header>
     <section class="calc_layout">
-        <input type="text" id="c_tela" readonly="readonly" disabled="true" aria-label="">
+        <input type="text" id="c_tela" readonly="readonly" disabled="true"  maxlength="22" placeholder="0">
         <Section class="c_buttons" id="c_botoes">
             <div class="linha_1">
-                <button class="n_btn"value="C">Limpar</button>
+                <button class="n_btn _lp"value="C"><strong>AC</strong></button>
                 <button class="n_btn"value="/">÷</button>
                 <button class="n_btn"value="*">X</button>
                 <button class="n_btn"value="-">-</button>
@@ -38,13 +40,17 @@
                 <button class="n_btn _1"value="1">1</button>
                 <button class="n_btn _2"value="2">2</button>
                 <button class="n_btn _3"value="3">3</button>
-                <button class="n_btn _ig"value="=">=</button>
-                <button class="n_btn _0"value="0">0</button>
+                <button class="n_btn _ig"value="="><strong>=</strong></button>
                 <button class="n_btn _pe"value="(">(</button>
+                <button class="n_btn _0"value="0">0</button>
                 <button class="n_btn _pd"value=")">)</button>
+                <button class="n_btn _del"value="del"><strong>Deletar &nbsp&nbsp&nbsp&nbsp<i class="fa-solid fa-delete-left"></i></strong></button>
             </div>
 
         </Section>
     </section>
+    <footer>
+        <h2><i class="fa-regular fa-copyright"></i>&nbsp Leonardo Cavalcante</h2>
+    </footer>
 </body>
 </html>
